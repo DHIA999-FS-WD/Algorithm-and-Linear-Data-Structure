@@ -1,0 +1,18 @@
+ALGORITHM part_1
+VAR
+    sentence:=STRING[];
+    Nwords:INTEGER:=0;
+    Nvowels :INTEGER:=0;
+BEGIN
+    REPEAT
+        Read(sentence);
+    UNTIL (sentence[sentence.length-1]==" ")
+    FOR i FROM 0 TO sentence.length-1 STEP 1  DO
+        IF (sentence[i]==" "or sentence[i]==".") THEN
+           Nwords:=Nwords + 1;
+        END_IF
+        IF (sentence[i]=="a"or sentence[i]=="e"sentence[i]=="i"or sentence[i]=="o"or sentence[i]=="u") THEN
+           Nvowels:=Nvowels + 1;
+        END_IF
+    END_FOR
+END
